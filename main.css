@@ -1,0 +1,7 @@
+td {
+    margin: 0;
+    padding: 7px;
+}
+td#description {
+    color: maroon;
+}

@@ -71,11 +71,55 @@ console.table(pos);
 //push data to DOM
 players.forEach((v, i) => {
     var td = document.createElement('td');
-    
-    if (!(i % 5)) {
-        tr = document.createElement('tr');
-        document.getElementById('table0').appendChild(tr);
-    }
-    td.appendChild(document.createTextNode(v));
+    tr = document.createElement('tr');
+    document.getElementById('table0').appendChild(tr);
+
+    var td = document.createElement('td');
+    td.id = "description";
+    td.appendChild(document.createTextNode("FullName: "));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.appendChild(document.createTextNode(v.firstName + ", "));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.appendChild(document.createTextNode(v.lastName));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.id = "description";    
+    td.appendChild(document.createTextNode("Date of Birth: "));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.appendChild(document.createTextNode(v.DOB));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.id = "description";    
+    td.appendChild(document.createTextNode("Country: "));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.appendChild(document.createTextNode(v.Country));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.id = "description";    
+    td.appendChild(document.createTextNode("Position: "));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.appendChild(document.createTextNode(v.position));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.id = "description";    
+    td.appendChild(document.createTextNode("Number: "));    
+    tr.appendChild(td);
+
+    var td = document.createElement('td');
+    td.appendChild(document.createTextNode(v.number));    
     tr.appendChild(td);
 });
