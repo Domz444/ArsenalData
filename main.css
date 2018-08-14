@@ -1,7 +1,16 @@
+body{
+    background-color: #a60302;
+}
 td {
     margin: 0;
     padding: 7px;
 }
-td#description {
-    color: maroon;
+td {
+    color: white;
 }
+#afcLogo{
+    height: 400px;
+    position: absolute;
+    right: 0;
+}
+
